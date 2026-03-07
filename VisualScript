@@ -1,0 +1,153 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+
+designed using localmaze gui creator
+]=]
+
+-- Instances: 18 | Scripts: 0 | Modules: 0 | Tags: 0
+local LMG2L = {};
+
+-- Players.RobloxUser_9982.PlayerGui.ScreenGui
+LMG2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+LMG2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- Players.RobloxUser_9982.PlayerGui.ScreenGui.Frame
+LMG2L["Frame_2"] = Instance.new("Frame", LMG2L["ScreenGui_1"]);
+LMG2L["Frame_2"]["BorderSizePixel"] = 0;
+LMG2L["Frame_2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["Frame_2"]["Size"] = UDim2.new(0.29531, 0, 0.58491, 0);
+LMG2L["Frame_2"]["Position"] = UDim2.new(0.3625, 0, 0.18059, 0);
+
+
+-- Players.RobloxUser_9982.PlayerGui.ScreenGui.Frame.UICorner
+LMG2L["UICorner_3"] = Instance.new("UICorner", LMG2L["Frame_2"]);
+LMG2L["UICorner_3"]["CornerRadius"] = UDim.new(0, 15);
+
+
+-- Players.RobloxUser_9982.PlayerGui.ScreenGui.Frame.Frame
+LMG2L["Frame_4"] = Instance.new("Frame", LMG2L["Frame_2"]);
+LMG2L["Frame_4"]["BorderSizePixel"] = 0;
+LMG2L["Frame_4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Frame_4"]["Size"] = UDim2.new(0.83069, 0, 0.82949, 0);
+LMG2L["Frame_4"]["Position"] = UDim2.new(0.08466, 0, 0.08756, 0);
+
+
+-- Players.RobloxUser_9982.PlayerGui.ScreenGui.Frame.Frame.UICorner
+LMG2L["UICorner_5"] = Instance.new("UICorner", LMG2L["Frame_4"]);
+LMG2L["UICorner_5"]["CornerRadius"] = UDim.new(0, 15);
+
+
+-- Players.RobloxUser_9982.PlayerGui.ScreenGui.Frame.Frame.UIGradient
+LMG2L["UIGradient_6"] = Instance.new("UIGradient", LMG2L["Frame_4"]);
+LMG2L["UIGradient_6"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(10, 255, 230)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(163, 18, 255))};
+
+
+-- Players.RobloxUser_9982.PlayerGui.ScreenGui.Frame.Frame.TextLabel
+LMG2L["TextLabel_7"] = Instance.new("TextLabel", LMG2L["Frame_4"]);
+LMG2L["TextLabel_7"]["TextWrapped"] = true;
+LMG2L["TextLabel_7"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_7"]["TextScaled"] = true;
+LMG2L["TextLabel_7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_7"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextLabel_7"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_7"]["Size"] = UDim2.new(0.74522, 0, 0.37222, 0);
+LMG2L["TextLabel_7"]["Text"] = [[Trade Scam Script]];
+LMG2L["TextLabel_7"]["Position"] = UDim2.new(0.1465, 0, 0, 0);
+
+
+-- Players.RobloxUser_9982.PlayerGui.ScreenGui.Frame.Frame.TextButton
+LMG2L["TextButton_8"] = Instance.new("TextButton", LMG2L["Frame_4"]);
+LMG2L["TextButton_8"]["TextWrapped"] = true;
+LMG2L["TextButton_8"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_8"]["TextScaled"] = true;
+LMG2L["TextButton_8"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_8"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_8"]["Size"] = UDim2.new(0.79618, 0, 0.15, 0);
+LMG2L["TextButton_8"]["Text"] = [[Freeze Trade]];
+LMG2L["TextButton_8"]["Position"] = UDim2.new(0.10828, 0, 0.35556, 0);
+
+
+-- Players.RobloxUser_9982.PlayerGui.ScreenGui.Frame.Frame.TextButton.UICorner
+LMG2L["UICorner_9"] = Instance.new("UICorner", LMG2L["TextButton_8"]);
+LMG2L["UICorner_9"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- Players.RobloxUser_9982.PlayerGui.ScreenGui.Frame.Frame.TextButton.UIGradient
+LMG2L["UIGradient_a"] = Instance.new("UIGradient", LMG2L["TextButton_8"]);
+LMG2L["UIGradient_a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 255, 233))};
+
+
+-- Players.RobloxUser_9982.PlayerGui.ScreenGui.Frame.Frame.TextButton
+LMG2L["TextButton_b"] = Instance.new("TextButton", LMG2L["Frame_4"]);
+LMG2L["TextButton_b"]["TextWrapped"] = true;
+LMG2L["TextButton_b"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_b"]["TextSize"] = 10;
+LMG2L["TextButton_b"]["TextScaled"] = true;
+LMG2L["TextButton_b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_b"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_b"]["Size"] = UDim2.new(0.79618, 0, 0.15, 0);
+LMG2L["TextButton_b"]["Text"] = [[Force Give All Brainrots]];
+LMG2L["TextButton_b"]["Position"] = UDim2.new(0.10828, 0, 0.51667, 0);
+
+
+-- Players.RobloxUser_9982.PlayerGui.ScreenGui.Frame.Frame.TextButton.UICorner
+LMG2L["UICorner_c"] = Instance.new("UICorner", LMG2L["TextButton_b"]);
+LMG2L["UICorner_c"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- Players.RobloxUser_9982.PlayerGui.ScreenGui.Frame.Frame.TextButton.UIGradient
+LMG2L["UIGradient_d"] = Instance.new("UIGradient", LMG2L["TextButton_b"]);
+LMG2L["UIGradient_d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 255, 233))};
+
+
+-- Players.RobloxUser_9982.PlayerGui.ScreenGui.Frame.Frame.TextButton
+LMG2L["TextButton_e"] = Instance.new("TextButton", LMG2L["Frame_4"]);
+LMG2L["TextButton_e"]["TextWrapped"] = true;
+LMG2L["TextButton_e"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_e"]["TextScaled"] = true;
+LMG2L["TextButton_e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_e"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_e"]["Size"] = UDim2.new(0.79618, 0, 0.15, 0);
+LMG2L["TextButton_e"]["Text"] = [[Force Accept]];
+LMG2L["TextButton_e"]["Position"] = UDim2.new(0.10828, 0, 0.67778, 0);
+
+
+-- Players.RobloxUser_9982.PlayerGui.ScreenGui.Frame.Frame.TextButton.UICorner
+LMG2L["UICorner_f"] = Instance.new("UICorner", LMG2L["TextButton_e"]);
+LMG2L["UICorner_f"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- Players.RobloxUser_9982.PlayerGui.ScreenGui.Frame.Frame.TextButton.UIGradient
+LMG2L["UIGradient_10"] = Instance.new("UIGradient", LMG2L["TextButton_e"]);
+LMG2L["UIGradient_10"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 255, 233))};
+
+
+-- Players.RobloxUser_9982.PlayerGui.ScreenGui.Frame.Frame.TextLabel
+LMG2L["TextLabel_11"] = Instance.new("TextLabel", LMG2L["Frame_4"]);
+LMG2L["TextLabel_11"]["TextWrapped"] = true;
+LMG2L["TextLabel_11"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_11"]["TextScaled"] = true;
+LMG2L["TextLabel_11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_11"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextLabel_11"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_11"]["Size"] = UDim2.new(0.53503, 0, 0.11667, 0);
+LMG2L["TextLabel_11"]["Text"] = [[discord.gg/]];
+LMG2L["TextLabel_11"]["Position"] = UDim2.new(0.2293, 0, 0.84444, 0);
+
+
+-- Players.RobloxUser_9982.PlayerGui.ScreenGui.Frame.UIDragDetector
+LMG2L["UIDragDetector_12"] = Instance.new("UIDragDetector", LMG2L["Frame_2"]);
+
+
+
+
+return LMG2L["ScreenGui_1"], require;
