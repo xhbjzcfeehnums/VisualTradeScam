@@ -1,152 +1,128 @@
--- Gui to Lua
--- Version: 3.2
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 
--- Instances:
+designed using localmaze gui creator
+]=]
 
-local TradeScam = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local Gradient = Instance.new("Frame")
-local UIGradient = Instance.new("UIGradient")
-local UICorner_2 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
-local TextButton = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local UIGradient_2 = Instance.new("UIGradient")
-local TextButton_2 = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local UIGradient_3 = Instance.new("UIGradient")
-local TextButton_3 = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local UIGradient_4 = Instance.new("UIGradient")
-local TextLabel_2 = Instance.new("TextLabel")
-local UICorner_6 = Instance.new("UICorner")
-local Frame_2 = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
+-- Instances: 20 | Scripts: 0 | Modules: 0 | Tags: 0
+local LMG2L = {};
 
---Properties:
+-- Players.RobloxUser_9982.PlayerGui.TradeFreeze
+LMG2L["TradeFreeze_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+LMG2L["TradeFreeze_1"]["Name"] = [[TradeFreeze]];
+LMG2L["TradeFreeze_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
-TradeScam.Name = "TradeScam"
-TradeScam.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-TradeScam.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Frame.Parent = TradeScam
-Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.443455487, -75, 0.0487421378, 141)
-Frame.Size = UDim2.new(0, 258, 0, 292)
+-- Players.RobloxUser_9982.PlayerGui.TradeFreeze.Frame
+LMG2L["Frame_2"] = Instance.new("Frame", LMG2L["TradeFreeze_1"]);
+LMG2L["Frame_2"]["BorderSizePixel"] = 0;
+LMG2L["Frame_2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["Frame_2"]["Size"] = UDim2.new(0.2575, 0, 0.55969, 0);
+LMG2L["Frame_2"]["Position"] = UDim2.new(0.36625, 0, 0.09499, 0);
 
-UICorner.CornerRadius = UDim.new(0, 20)
-UICorner.Parent = Frame
 
-Gradient.Name = "Gradient"
-Gradient.Parent = Frame
-Gradient.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Gradient.BorderSizePixel = 0
-Gradient.Position = UDim2.new(0, 20, 0, 26)
-Gradient.Size = UDim2.new(0, 217, 0, 240)
+-- Players.RobloxUser_9982.PlayerGui.TradeFreeze.Frame.UICorner
+LMG2L["UICorner_3"] = Instance.new("UICorner", LMG2L["Frame_2"]);
+LMG2L["UICorner_3"]["CornerRadius"] = UDim.new(0, 15);
 
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(130, 58, 179)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(251, 175, 68))}
-UIGradient.Rotation = 45
-UIGradient.Parent = Gradient
 
-UICorner_2.CornerRadius = UDim.new(0, 20)
-UICorner_2.Parent = Gradient
+-- Players.RobloxUser_9982.PlayerGui.TradeFreeze.Frame.Frame
+LMG2L["Frame_4"] = Instance.new("Frame", LMG2L["Frame_2"]);
+LMG2L["Frame_4"]["BorderSizePixel"] = 0;
+LMG2L["Frame_4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Frame_4"]["Size"] = UDim2.new(0.71359, 0, 0.8211, 0);
+LMG2L["Frame_4"]["Position"] = UDim2.new(0.15534, 0, 0.09174, 0);
 
-TextLabel.Parent = Gradient
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.147465438, 0, 0, 0)
-TextLabel.Size = UDim2.new(0, 155, 0, 40)
-TextLabel.Font = Enum.Font.FredokaOne
-TextLabel.Text = "Trade Scam Script"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
 
-TextButton.Parent = Gradient
-TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.184331805, 0, 0.224999994, 0)
-TextButton.Size = UDim2.new(0, 139, 0, 39)
-TextButton.Font = Enum.Font.FredokaOne
-TextButton.Text = "Freeze Trade"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextWrapped = true
+-- Players.RobloxUser_9982.PlayerGui.TradeFreeze.Frame.Frame.UIGradient
+LMG2L["UIGradient_5"] = Instance.new("UIGradient", LMG2L["Frame_4"]);
+LMG2L["UIGradient_5"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(189, 5, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(9, 212, 255))};
 
-UICorner_3.CornerRadius = UDim.new(1, 8)
-UICorner_3.Parent = TextButton
 
-UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.65, Color3.fromRGB(184, 134, 10)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(122, 255, 20))}
-UIGradient_2.Parent = TextButton
+-- Players.RobloxUser_9982.PlayerGui.TradeFreeze.Frame.Frame.UICorner
+LMG2L["UICorner_6"] = Instance.new("UICorner", LMG2L["Frame_4"]);
+LMG2L["UICorner_6"]["CornerRadius"] = UDim.new(0, 15);
 
-TextButton_2.Parent = Gradient
-TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(0.179723501, 0, 0.416666657, 0)
-TextButton_2.Size = UDim2.new(0, 139, 0, 39)
-TextButton_2.Font = Enum.Font.FredokaOne
-TextButton_2.Text = "Force Accept"
-TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.TextScaled = true
-TextButton_2.TextSize = 14.000
-TextButton_2.TextWrapped = true
 
-UICorner_4.CornerRadius = UDim.new(1, 8)
-UICorner_4.Parent = TextButton_2
+-- Players.RobloxUser_9982.PlayerGui.TradeFreeze.Frame.Frame.TextLabel
+LMG2L["TextLabel_7"] = Instance.new("TextLabel", LMG2L["Frame_4"]);
+LMG2L["TextLabel_7"]["TextWrapped"] = true;
+LMG2L["TextLabel_7"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_7"]["TextScaled"] = true;
+LMG2L["TextLabel_7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_7"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextLabel_7"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_7"]["Size"] = UDim2.new(0.7551, 0, 0.16201, 0);
+LMG2L["TextLabel_7"]["Text"] = [[Trade Scam Script]];
+LMG2L["TextLabel_7"]["Position"] = UDim2.new(0.12245, 0, 0, 0);
 
-UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.65, Color3.fromRGB(184, 134, 10)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(122, 255, 20))}
-UIGradient_3.Parent = TextButton_2
 
-TextButton_3.Parent = Gradient
-TextButton_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_3.BorderSizePixel = 0
-TextButton_3.Position = UDim2.new(0.179723501, 0, 0.604166687, 0)
-TextButton_3.Size = UDim2.new(0, 139, 0, 39)
-TextButton_3.Font = Enum.Font.FredokaOne
-TextButton_3.Text = "Force Give All Brainrots"
-TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_3.TextScaled = true
-TextButton_3.TextSize = 14.000
-TextButton_3.TextWrapped = true
+-- Players.RobloxUser_9982.PlayerGui.TradeFreeze.Frame.Frame.TextButton
+LMG2L["TextButton_8"] = Instance.new("TextButton", LMG2L["Frame_4"]);
+LMG2L["TextButton_8"]["TextWrapped"] = true;
+LMG2L["TextButton_8"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_8"]["TextScaled"] = true;
+LMG2L["TextButton_8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_8"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_8"]["Size"] = UDim2.new(0.7483, 0, 0.14525, 0);
+LMG2L["TextButton_8"]["Text"] = [[Freeze Trade]];
+LMG2L["TextButton_8"]["Position"] = UDim2.new(0.13605, 0, 0.40223, 0);
 
-UICorner_5.CornerRadius = UDim.new(1, 8)
-UICorner_5.Parent = TextButton_3
 
-UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.65, Color3.fromRGB(184, 134, 10)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(122, 255, 20))}
-UIGradient_4.Parent = TextButton_3
+-- Players.RobloxUser_9982.PlayerGui.TradeFreeze.Frame.Frame.TextButton.UICorner
+LMG2L["UICorner_9"] = Instance.new("UICorner", LMG2L["TextButton_8"]);
+LMG2L["UICorner_9"]["CornerRadius"] = UDim.new(1, 0);
 
-TextLabel_2.Parent = Gradient
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.105990782, 0, 0.8125, 0)
-TextLabel_2.Size = UDim2.new(0, 170, 0, 34)
-TextLabel_2.Font = Enum.Font.FredokaOne
-TextLabel_2.Text = "Ready!"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
 
-UICorner_6.CornerRadius = UDim.new(1, 8)
-UICorner_6.Parent = TextLabel_2
+-- Players.RobloxUser_9982.PlayerGui.TradeFreeze.Frame.Frame.TextButton.UIGradient
+LMG2L["UIGradient_a"] = Instance.new("UIGradient", LMG2L["TextButton_8"]);
+LMG2L["UIGradient_a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(47, 255, 191))};
 
-Frame_2.Parent = TextLabel_2
-Frame_2.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
-Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(0.0941176489, 0, 0.264705896, 0)
-Frame_2.Size = UDim2.new(0, 15, 0, 15)
 
-UICorner_7.CornerRadius = UDim.new(1, 0)
-UICorner_7.Parent = Frame_2
+-- Players.RobloxUser_9982.PlayerGui.TradeFreeze.Frame.Frame.TextButton
+LMG2L["TextButton_b"] = Instance.new("TextButton", LMG2L["Frame_4"]);
+LMG2L["TextButton_b"]["TextWrapped"] = true;
+LMG2L["TextButton_b"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_b"]["TextScaled"] = true;
+LMG2L["TextButton_b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_b"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_b"]["Size"] = UDim2.new(0.7483, 0, 0.14525, 0);
+LMG2L["TextButton_b"]["Text"] = [[Force Give All Brainrots]];
+LMG2L["TextButton_b"]["Position"] = UDim2.new(0.13605, 0, 0.56425, 0);
+
+
+-- Players.RobloxUser_9982.PlayerGui.TradeFreeze.Frame.Frame.TextButton.UICorner
+LMG2L["UICorner_c"] = Instance.new("UICorner", LMG2L["TextButton_b"]);
+LMG2L["UICorner_c"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- Players.RobloxUser_9982.PlayerGui.TradeFreeze.Frame.Frame.TextButton.UIGradient
+LMG2L["UIGradient_d"] = Instance.new("UIGradient", LMG2L["TextButton_b"]);
+LMG2L["UIGradient_d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(47, 255, 191))};
+
+
+-- Players.RobloxUser_9982.PlayerGui.TradeFreeze.Frame.Frame.TextButton
+LMG2L["TextButton_e"] = Instance.new("TextButton", LMG2L["Frame_4"]);
+LMG2L["TextButton_e"]["TextWrapped"] = true;
+LMG2L["TextButton_e"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_e"]["TextScaled"] = true;
+LMG2L["TextButton_e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_e"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_e"]["Size"] = UDim2.new(0.7483, 0, 0.14525, 0);
+LMG2L["TextButton_e"]["Text"] = [[Force Accept]];
+LMG2L["TextButton_e"]["Position"] = UDim2.new(0.14966, 0, 0.72626, 0);
+
+
+-- Players.RobloxUser_9982.PlayerGui.TradeFreeze.Frame.Frame.TextButton.UICorner
+LMG2L["UICorner_f"] = Instance.new("UICorner", LMG2L["TextButton_e"]);
+LMG2L["UICorner_f"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- Players.RobloxUser_9982.PlayerGui.TradeFreeze.Frame.Frame.TextButton.UIGradient
+LMG2L["UIGradient_10"] = Instance.new("UIGradient", LMG2L["TextButton_e"]);
+LMG2L["UIGradient_10"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(47, 255, 191))};
